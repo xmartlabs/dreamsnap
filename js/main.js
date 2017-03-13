@@ -1,7 +1,7 @@
 $(document).ready(inlineSocialButtonsSvgs());
 
 function inlineSocialButtonsSvgs() {
-  $('img.socialbutton').each(function(){
+  $('img.social-button').each(function(){
     var $img = jQuery(this);
     var imgID = $img.attr('id');
     var imgClass = $img.attr('class');

@@ -120,3 +120,15 @@ p {
   margin-left: 10%;
   float: right;
 }
+
+a:hover # {
+  fill: #3b5998;
+}
+
+a:hover # {
+  fill: #326ada;
+}
+
+a:hover # {
+  fill: #8a3ab9;
+}
