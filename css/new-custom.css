@@ -1,9 +1,16 @@
 body {
-  padding-top: 10%;
+  padding-top: 6%;
+  padding-bottom: 150px;
   background-image: url(http://daks2k3a4ib2z.cloudfront.net/588659f1bffc966e7cdc12b7/588664c5842481330a879000_dreamsnapBackground.jpg);
   background-position: 38% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-height: 720px) {
+  body {
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 800px) {
