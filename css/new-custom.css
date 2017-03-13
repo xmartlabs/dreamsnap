@@ -1,0 +1,122 @@
+body {
+  padding-top: 10%;
+  background-image: url(http://daks2k3a4ib2z.cloudfront.net/588659f1bffc966e7cdc12b7/588664c5842481330a879000_dreamsnapBackground.jpg);
+  background-position: 38% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding-top: 15%;
+  }
+}
+
+p {
+  color: #222;
+  display: block;
+  margin-bottom: 16px;
+  font-family: Lato, sans-serif;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 700px) {
+  .dm-logo {
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .dm-logo {
+    width: 100%;
+  }
+}
+
+.main-header {
+  margin: 35px 0;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 100;
+}
+
+.email-input {
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent transparent #6b6b6b;
+  background-color: transparent;
+  color: #6b6b6b;
+  padding: 7px 0 10px;
+}
+
+.submit-button {
+  width: 250px;
+  height: 50px;
+  margin-top: 5%;
+  background-color: #8038ec;
+  background-image: linear-gradient(90deg, #3023ae, #c96dd8);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: 0;
+  color: white;
+}
+
+.promo-button {
+  width: 44%;
+  max-width: 150px;
+  margin-top: 8%;
+  margin-right: 5%;
+}
+
+.mobile-container {
+  height: 500px;
+  width: 200px;
+  padding-top: 50px;
+}
+
+.footer {
+  padding: 50px 0;
+  width: 100%;
+  background-color: #36323c;
+  height: 150px;
+}
+
+@media (min-width: 700px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    margin-top: 10px;
+  }
+}
+
+.footer-logo {
+  float: left;
+}
+
+.foot-note {
+  color: #776f83;
+  float: left;
+  font-size: 12px;
+  border-left: 2px solid #776f83;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.social-button {
+  overflow: visible;
+  margin-left: 10%;
+  float: right;
+}

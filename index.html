@@ -11,9 +11,11 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-  <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link href="css/main2.css" rel="stylesheet" type="text/css">
   <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+  <link href="css/new-custom.css" rel="stylesheet" type="text/css">
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Dreamsnap" />
@@ -29,79 +31,63 @@
   <meta name="twitter:creator" content="@xmartlabs" />
 </head>
 
-<body class="body" spellcheck="false" style="">
-  <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-  <div class="w-section hero" draggable="false">
-    <div class="main-div" id="main-div" data-w-id="4b9cd460-5420-fb13-9a78-03a6d9c43c85" draggable="false">
-      <div class="w-row heroimagecontainer" draggable="false">
-        <div class="w-col w-col-7 w-col-small-small-stack textcontainer" draggable="false">
-          <img class="" src="img/logo.svg" height="40" alt="" draggable="false">
-          <h2 class="mainheader w-rte-editable" draggable="false">Real life through the eyes of an artist</h2>
-          <p class="mainparagraph w-rte-editable" draggable="false">
-            Explore the world through artist-inspired filters on your cellphone camera in real time. Feel the Machine Learning magic while gazing at your altered universe.
-          </p>
-          <div class="w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" data-w-id="8fa8f38e-8d17-91f9-eae7-1bc61402ddd5" action="//xmartlabs.us15.list-manage.com/subscribe/post?u=7164c9e1af68dd5249a85e08a&amp;id=cbc06c187c" method="post" target="_noblank">
-              <input type="email" class="w-input inputsection" id="mce-EMAIL" name="EMAIL" data-name="Email" required="required" placeholder="EMAIL" maxlength="256" data-w-id="1ef5dc41-d969-0df0-ebe2-cd314a1d22b8">
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- HEADER AND FORM -->
+      <div class="col col-md-3 col-md-offset-3 col-sm-4 col-xs-10 col-xs-offset-1">
+        <img class="dm-logo" src="img/logo.svg" alt draggable="false" />
+        <h2 class="main-header">Real life through the eyes of an artist</h2>
+        <p>
+          Explore the world through artist-inspired filters on your cellphone camera in real time. Feel the Machine Learning magic while gazing at your altered universe.
+        </p>
+        <form id="email-form" name="email-form" data-name="Email Form" action="//xmartlabs.us15.list-manage.com/subscribe/post?u=7164c9e1af68dd5249a85e08a&amp;id=cbc06c187c" method="post" target="_noblank">
+          <input type="email" class="email-input" id="mce-EMAIL" name="EMAIL" data-name="Email" placeholder="EMAIL" maxlength="256" required>
 
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7164c9e1af68dd5249a85e08a_cbc06c187c" tabindex="-1" value=""></div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7164c9e1af68dd5249a85e08a_cbc06c187c" tabindex="-1" value=""></div>
 
-              <input id="mc-embedded-subscribe" name="subscribe" type="submit" class="w-button submitbutton" value="Subscribe" data-wait="SUBMITING...">
-            </form>
-          </div>
-          <img class="promobutton" src="img/app_store.svg" alt="" draggable="false">
-          <img class="promobutton" src="img/google_play.svg" alt="" draggable="false">
-        </div>
+          <input id="mc-embedded-subscribe" name="subscribe" type="submit" class="submit-button" value="Subscribe" data-wait="SUBMITING...">
+        </form>
 
-        <div class="w-col w-col-3 scale-container-05">
-          <div class="marvel-device iphone6 silver scale--05">
-            <div class="top-bar"></div>
-            <div class="sleep"></div>
-            <div class="volume"></div>
-            <div class="camera"></div>
-            <div class="sensor"></div>
-            <div class="speaker"></div>
-            <div class="screen">
-              <video autoplay loop style="width: 100%;">
-                <source src="http://d18tndtkm7kj2p.cloudfront.net/dreamsnap/video/sample.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="home"></div>
-            <div class="bottom-bar"></div>
-          </div>
-        </div>
+        <img class="promo-button" src="img/app_store.svg" alt="" draggable="false">
+        <img class="promo-button" src="img/google_play.svg" alt="" draggable="false">
       </div>
-      <div class="iphone">
-        <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 826px" src="img/app_sample.png"/>
-      </div>
-
+      <!-- CELLPHONE VIDEO -->
+      <div class="col col-md-2 col-md-offset-1 col-sm-4 col-xs-9 col-xs-offset-2 mobile-container">
+        <div class="marvel-device iphone6 silver scale--05" draggable="false">
+          <div class="top-bar"></div>
+          <div class="sleep"></div>
+          <div class="volume"></div>
+          <div class="camera"></div>
+          <div class="sensor"></div>
+          <div class="speaker"></div>
+          <div class="screen">
+            <video autoplay loop style="width: 100%;">
+              <source src="http://d18tndtkm7kj2p.cloudfront.net/dreamsnap/video/sample.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="home"></div>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="footer" draggable="false">
-    <div class="w-container">
-      <div class="" draggable="false">
-        <div class="w-row" draggable="false">
-          <div class="w-col w-col-8 footer-left-col" draggable="false">
-            <a href="https://xmartlabs.com" target="_blank"><img class="footerlogo" src="img/xl.png" alt="" draggable="false"></a>
-            <div class="footertext w-rte-editable" draggable="false">Dreamsnap <br /> © 2017 Xmartlabs</div>
-          </div>
-          <div class="w-col w-col-4 socialmedia" draggable="false">
-            <a href="https://www.instagram.com/dreamsnapp/" target="_blank">
-              <img class="socialbutton" src="img/instagram.svg" alt="Instagram" draggable="false">
-            </a>
-            <a href="https://twitter.com/DreamSnapApp" target="_blank">
-              <img class="socialbutton" src="img/tw.svg" alt="Twitter" draggable="false">
-            </a>
-            <a href="https://www.facebook.com/DreamSnap-163926780762626/" target="_blank">
-              <img class="socialbutton" src="img/fb.svg" alt="Facebook" draggable="false">
-            </a>
-          </div>
-        </div>
-      </div>
+  <div class="footer">
+    <div class="col col-md-3 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
+      <a href="https://xmartlabs.com" class="footer-logo" target="_blank"><img src="img/xl.png" alt="" draggable="false"></a>
+      <div class="foot-note" draggable="false">Dreamsnap <br /> © 2017 Xmartlabs</div>
+    </div>
+    <div class="col col-md-2 col-md-offset-3 col-sm-3 col-sm-offset-2 col-xs-12">
+      <a href="https://www.instagram.com/dreamsnapp/" target="_blank">
+        <img class="social-button" src="img/instagram.svg" alt="Instagram" draggable="false">
+      </a>
+      <a href="https://twitter.com/DreamSnapApp" target="_blank">
+        <img class="social-button" src="img/tw.svg" alt="Twitter" draggable="false">
+      </a>
+      <a href="https://www.facebook.com/DreamSnap-163926780762626/" target="_blank">
+        <img class="social-button" src="img/fb.svg" alt="Facebook" draggable="false">
+      </a>
     </div>
   </div>
 
@@ -127,7 +113,5 @@
         ga('create', 'UA-29494874-10', 'auto');
         ga('send', 'pageview');
     }
-</script>
+  </script>
 </body>
-
-</html>
