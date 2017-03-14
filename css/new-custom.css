@@ -7,19 +7,6 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (max-height: 720px) {
-  body {
-    padding-top: 20px;
-  }
-}
-
-@media (max-width: 800px) {
-  body {
-    padding-top: 15%;
-    padding-bottom: 0;
-  }
-}
-
 p {
   color: #222;
   display: block;
@@ -28,18 +15,6 @@ p {
   line-height: 24px;
   font-weight: 400;
   letter-spacing: 0.5px;
-}
-
-@media (min-width: 700px) {
-  .dm-logo {
-    height: 40px !important;
-  }
-}
-
-@media (max-width: 700px) {
-  .dm-logo {
-    width: 100%;
-  }
 }
 
 .main-header {
@@ -97,19 +72,6 @@ p {
   height: 150px;
 }
 
-@media (min-width: 700px) {
-  .footer {
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-@media (max-width: 700px) {
-  .footer {
-    margin-top: 10px;
-  }
-}
-
 .footer-logo {
   float: left;
 }
@@ -139,4 +101,52 @@ a:hover # {
 
 a:hover # {
   fill: #8a3ab9;
+}
+
+/* MEDIA QUERIES */
+
+/* On low-height, high-width devices make top padding as small as possible,
+   also make footer smaller */
+@media (max-height: 720px) and (min-width: 700px) {
+  body {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  .footer {
+    height: 100px;
+    padding-top: 30px;
+  }
+}
+
+/* On mobile or tablet remove bottom padding and add a nice top padding */
+@media (max-width: 800px) {
+  body {
+    padding-top: 15%;
+    padding-bottom: 0;
+  }
+}
+
+/* On mobile and tablets make footer absolutely possitioned (to place it on the page footer),
+   also make dreamsnap logo comply to a specific height*/
+@media (min-width: 700px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .dm-logo {
+    height: 40px !important;
+  }
+}
+
+/* On mobile and tablets separate footer from content and make dreamsnap logo as wide as possible. */
+@media (max-width: 700px) {
+  .footer {
+    margin-top: 10px;
+  }
+
+  .dm-logo {
+    width: 100%;
+  }
 }
