@@ -91,6 +91,10 @@ p {
   float: right;
 }
 
+.screen {
+  z-index: 10 !important;
+}
+
 a:hover # {
   fill: #3b5998;
 }

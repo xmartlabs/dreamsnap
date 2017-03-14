@@ -1,4 +1,9 @@
-$(document).ready(inlineSocialButtonsSvgs());
+$(document).ready(function(){
+  inlineSocialButtonsSvgs();
+
+  // Autoplay videos
+  document.getElementsByTagName('video')[0].play();
+});
 
 function inlineSocialButtonsSvgs() {
   $('img.social-button').each(function(){
