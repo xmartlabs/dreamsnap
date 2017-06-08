@@ -107,6 +107,20 @@ a:hover # {
   fill: #8a3ab9;
 }
 
+.footer-bender {
+  text-align: center;
+}
+.footer-bender p {
+  color: #776f83 !important;
+}
+.footer-bender p a {
+  color: #776f83;
+  text-decoration: underline;
+}
+.footer-bender p a:hover {
+  color: white;
+}
+
 /* MEDIA QUERIES */
 
 /* On low-height, high-width devices make top padding as small as possible,
