@@ -29,6 +29,10 @@ p {
   font-weight: 100;
 }
 
+#email-form {
+  margin-top: 20px;
+}
+
 .email-input {
   width: 100%;
   border-style: solid;
@@ -55,7 +59,7 @@ p {
 .promo-button {
   width: 44%;
   max-width: 150px;
-  margin-top: 8%;
+  margin-top: 10px;
   margin-right: 5%;
 }
 
