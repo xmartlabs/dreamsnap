@@ -2,7 +2,7 @@
   $(document).ready(function(){
     inlineSocialButtonsSvgs();
 
-    jQuery('#google-play-icon').click(showEmailForm);
+    jQuery('#google-play-icon').click(showEmailForm)
 
     // Autoplay videos
     document.getElementsByTagName('video')[0].play();
@@ -38,6 +38,6 @@
   }
 
   function showEmailForm() {
-    jQuery('#email-form').fadeIn('slow');
+    jQuery('#email-form').css('display', 'block')
   }
 })();
