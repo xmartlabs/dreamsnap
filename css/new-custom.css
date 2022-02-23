@@ -1,7 +1,9 @@
 body {
   padding-top: 6%;
   padding-bottom: 150px;
-  background-image: url(https://daks2k3a4ib2z.cloudfront.net/588659f1bffc966e7cdc12b7/588664c5842481330a879000_dreamsnapBackground.jpg);
+  /* background-image: url(https://daks2k3a4ib2z.cloudfront.net/588659f1bffc966e7cdc12b7/588664c5842481330a879000_dreamsnapBackground.jpg); */
+  background-image: url(../img/bg.svg);
+
   background-position: 38% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,7 +13,7 @@ p {
   color: #222;
   display: block;
   margin-bottom: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 24px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -19,13 +21,12 @@ p {
 
 .main-header {
   margin: 35px 0;
-  font-size: 28px;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #222;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 38px;
+  line-height: 42px;
   font-weight: 100;
 }
 
@@ -54,6 +55,7 @@ p {
   letter-spacing: 1px;
   border: 0;
   color: white;
+  border-radius: 4px;
 }
 
 .promo-button {
@@ -63,7 +65,10 @@ p {
   margin-right: 5%;
   cursor: pointer;
 }
-
+.info-container {
+  height: 500px;
+  padding-top: 50px;
+}
 .mobile-container {
   height: 500px;
   width: 200px;
@@ -88,6 +93,7 @@ p {
   border-left: 2px solid #776f83;
   padding-left: 10px;
   margin-left: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 .social-button {
